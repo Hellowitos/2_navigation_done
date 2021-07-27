@@ -1,21 +1,19 @@
 import * as React from "react";
-import { enableScreens } from 'react-native-screens';
 import ScreenOne from "./stackComponents/ScreenOne";
 import ScreenTwo from "./stackComponents/ScreenTwo";
 import DetailsScreen from "./DetailsScreen";
 import { createStackNavigator } from '@react-navigation/stack';
 
 
-enableScreens()
 const Stack = createStackNavigator()
 
 
 function StackNavigator() {
     return (
         <Stack.Navigator
-            initialRouteName="DetailsScreen"
+            initialRouteName="Stack"
         >
-            <Stack.Screen name="DetailsScreen" component={DetailsScreen}
+            <Stack.Screen name="Stack" component={DetailsScreen}
                 options={{
                     headerTitleAlign: 'center',
                     headerTitleStyle: {color: 'white'},
@@ -35,11 +33,9 @@ function StackNavigator() {
     )
 }
 
-function InitializeStack({prop}) {
-    console.log("prop")
-    console.log(prop)
+function InitializeStack() {
     return(
-            <StackNavigator prop={prop} />
+            <StackNavigator />
     )
 
 }

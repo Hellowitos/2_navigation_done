@@ -13,10 +13,9 @@ const Tab = createBottomTabNavigator();
 //Her oprettes de tre tekst referencer, der skal benyttes i vores screen komponenter
 const homeScreenText = "Dette er HomeScreen!"
 const settingsScreenText = "Dette er SettingsScreen!"
-const detailsScreenText = "Dette er DetailsScreen!"
 
 /*Oprettelse af root komponent
-* Her oprettes først en Navigationscontainerkomponent, der står for at håndtere state-ændringer & deep linking
+* Her oprettes først en Navigationscontainer-komponent, der står for at håndtere state-ændringer & deep linking
 * Ydeligere info om denne komponent kan findes i følgende link: https://reactnavigation.org/docs/navigation-container/
 *
 * Dernæst kaldes Navigator, der styrer navigationen mellem de forskellige tabs.
@@ -69,7 +68,7 @@ const detailsScreenText = "Dette er DetailsScreen!"
          >
           <Tab.Screen name="Settings" children={()=><SettingsScreen prop={settingsScreenText}/>} />
             <Tab.Screen name="Home" children={()=><HomeScreen prop={homeScreenText}/>} />
-          <Tab.Screen name="Details" component={InitializeStack} />
+          <Tab.Screen name="Stack" component={InitializeStack} />
         </Tab.Navigator>
       </NavigationContainer>
   );
