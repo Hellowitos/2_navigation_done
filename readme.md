@@ -1,6 +1,6 @@
 <h1> Øvelsesvejledning til øvelse 2 - Navigation </h1>
 
-<h2> Part one - Tab navigator</h2>
+<h2> Part One - Tab Navigator</h2>
 1.   Start med at oprette et nyt projekt. 
 2.  Installér følgende dependencies;
     - @react-navigation/bottom-tabs
