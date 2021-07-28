@@ -1,22 +1,28 @@
 <h1> Øvelsesvejledning til øvelse 2 - Navigation </h1>
 
 <h2> Part One - Tab Navigator</h2>
-1.   Start med at oprette et nyt projekt. 
-2.  Installér følgende dependencies;
-    - @react-navigation/bottom-tabs
-    - @react-navigation/bottom-tabs
-    - @react-navigation/native
-    - @react-navigation/stack
-    - react-native-gesture-handler
-    - react-native-safe-area-context
-    - react-native-screens
-    - react-native-vector-icons 
-        - Et skærmklip af package.json filen til den endelige løsning er vedlagt i bilag A.
-          Din package.json bør være ens med denne efter installeringen. 
-        - KOPIER linjen herunder til installering.
+<ol>
+<li>   Start med at oprette et nyt projekt. </li>
+<li>  Installér følgende dependencies;</li>
+    <ul> 
+        <li>@react-navigation/bottom-tabs</li>
+        <li>@react-navigation/bottom-tabs</li>
+        <li>@react-navigation/native</li>
+        <li>@react-navigation/stack</li>
+        <li>react-native-gesture-handler</li>
+        <li>react-native-safe-area-context</li>
+        <li>react-native-screens</li>
+        <li>react-native-vector-icons </li>
+        <ul>
+            <li>Et skærmklip af package.json filen til den endelige løsning er vedlagt i bilag A.<
+                Din package.json bør være ens med denne efter installeringen. </li>
+            <li>KOPIER linjen herunder til installering.</li>
+        </ul>
+        </ul>
+    </ol>
 
-   
-        npm install --save @react-navigation/bottom-tabs @react-navigation/bottom-tabs @react-navigation/native @react-navigation/stack react-native-gesture-handler react-native-safe-area-context react-native-screens react-native-vector-icons
+
+npm install --save @react-navigation/bottom-tabs @react-navigation/bottom-tabs @react-navigation/native @react-navigation/stack react-native-gesture-handler react-native-safe-area-context react-native-screens react-native-vector-icons
 
 3. Opret en mappe og døb denne 'components'
 4. I mappen oprettes tre filer, der kaldes;<br/> 'HomeScreen', 'SettingsScreen' & 'DetailsScreen'
@@ -36,9 +42,11 @@
             - component: Her placeres de importerede for til den enkelte screens komponent.
                 - HINT: Igen, hvis du går i stå, så ta' et kig på dokumentationen, der kan findes på det førnævnte link.
     <h3>Tjek af fremskridt</h3>
-    - Afprøv nu din app. Efter opstart af app'en, bør du nu have en tab navigator med tre tabs. 
-    - Ved klik på en tab, bør du kunne navigere mellem de forskellige screens; HomeScreen, SettingsScreen og DetailsScreen. 
-    - Spiller det? Cool, så kør videre ned og prøv kræfter med Stack navigatoren
+    <ul>
+    <li>Afprøv nu din app. Efter opstart af app'en, bør du nu have en tab navigator med tre tabs.</li>
+    <li> Ved klik på en tab, bør du kunne navigere mellem de forskellige screens;</li> HomeScreen, SettingsScreen og DetailsScreen. 
+    <li>Spiller det? Cool, så kør videre ned og prøv kræfter med Stack navigatoren</li>
+    </ul>
 
 <h2>Part two - Stack Navigator </h2>  
 1. Opret i components en ny fil, der kaldes 'StackNavigator'. Derudover skal der i components mappen oprettes en ny mappe, der kaldes 'StackComponents'. I denne mappe, skal der oprettes to nye filer med vilkårligt navn. 
