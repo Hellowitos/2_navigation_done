@@ -1,7 +1,7 @@
 <h1> Øvelsesvejledning til øvelse 2 - Navigation </h1>
 
 <h2> Part One - Tab Navigator</h2>
-1. Start med at oprette et nyt projekt.
+1. Start med at oprette et nyt projekt.<br/>
 2. Installér følgende dependencies;
 <ul>
     <li> @react-navigation/bottom-tabs</li>
@@ -42,8 +42,8 @@
     <h3>Tjek af fremskridt</h3>
     <ul>
     <li>Afprøv nu din app. Efter opstart af app'en, bør du nu have en tab navigator med tre tabs.</li>
-    <li> Ved klik på en tab, bør du kunne navigere mellem de forskellige screens;</li> HomeScreen, SettingsScreen og DetailsScreen. 
-    <li>Spiller det? Cool, så kør videre ned og prøv kræfter med Stack navigatoren</li>
+    <li> Forsøg at navigere mellem de forskeligge screen ved at bruge Tab navigatoren.</li>
+    <li>Hvis det fungerer, er du klar til at operette en Stack navigatoren</li>
     </ul>
 
 <h2>Part two - Stack Navigator </h2>  
@@ -89,11 +89,14 @@
    <li> Den anden button komponent skal kalde navigation.navigate('Rutenavnet på den anden screen i stackComponents') </li>
        <li> Nu er du færdig og er klar til at afprøve din app. </li>
        </ul>
- <h3>Er opgaven løst?</h3>
-    - Start nu din app igen. Du bør nu være i stand til at navigere mellem tre tabs i bunden af din skærm. 
-    - Den ene tab bør føre dig ind til din Stack navigator, der i udgangspunktet viser Details komponenten. I denne screen bør der være to knapper, der vil navigere til de to screens i stackComponents
-    - I hver af de to screens, skal der ligeledes være to knapper, hvoraf den ene sender dig retur til den screen du kom fra, hvortil den anden sender dig til anden screen i stackComponents. 
     </ol>
+ <h3>Er opgaven løst?</h3>
+    <ul>
+    <li>Start nu din app igen. Du bør nu være i stand til at navigere mellem tre tabs i bunden af din skærm. </li>
+    <li>Den ene tab bør føre dig ind til din Stack navigator, der i udgangspunktet viser Details komponenten. I denne screen bør der være to knapper, der vil navigere til de to screens i stackComponents</li>
+    <li>I hver af de to screens, skal der ligeledes være to knapper, hvoraf den ene sender dig retur til den screen du kom fra, hvortil den anden sender dig til anden screen i stackComponents. </li>
+        </ul>
+    
 
 <h2>Videre arbejde - Inspiration</h2>
 <ul>
