@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View} from "react-native";
 import * as React from "react";
 
-//Hoomscreen komponenten tager en prop med og printer midt på siden
+//SettingsScreen komponenten tager en prop med og printer indholdet af denne prop i en <Text>
 function SettingsScreen({prop}) {
     return (
         <View style={styles.container}>
@@ -12,7 +12,7 @@ function SettingsScreen({prop}) {
 
 export default SettingsScreen
 
-//Styling komponenter til siden
+//Lokal styling til brug i SettingsScreen
 const styles = StyleSheet.create({
     container: {
         paddingTop:100,

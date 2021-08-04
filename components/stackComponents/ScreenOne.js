@@ -1,6 +1,13 @@
 import {Button, StyleSheet, Text, View} from "react-native";
 import * as React from "react";
 
+/*
+*ScreenOne er den ene af de tre screens i StackNavigatoren
+* ScreenOne præsenterer en tekst, der beskriver, hvor brugeren befinder sig samt
+* returnerer to <Button/>, som benyttes til henholdsvis at navigere tilbage til sidste Screen og
+* navigere ind til den anden screen i stackComponents
+* Slutteligt er der inkluderet styling til komponenterne
+ */
 function ScreenOne({ navigation}) {
     return (
         <View style={styles.container}>
@@ -16,10 +23,11 @@ function ScreenOne({ navigation}) {
         </View>
     );
 }
-
+//Eksport af Screen således den kan importeres- og bruges i andres komponenter
 export default ScreenOne
 
 
+//Lokal styling til brug i ScreenOne
 const styles = StyleSheet.create({
     container: {
         borderColor: 'red',

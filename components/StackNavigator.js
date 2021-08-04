@@ -4,16 +4,20 @@ import ScreenTwo from "./stackComponents/ScreenTwo";
 import DetailsScreen from "./DetailsScreen";
 import { createStackNavigator } from '@react-navigation/stack';
 
-
+//Her instantieres en StackNavigator.
 const Stack = createStackNavigator()
 
-
+/*
+* I return() placeres en Stack.Navigator komponent, som i 'initialRoutName' henviser til DetailsScreen.
+* Dernæst fastsættes tre Screens i Stacken. Disse er DetailsScreen, ScreenOne og ScreenTwo
+* Hver Screen har individuel Styling qf den fremviste header.
+ */
 function StackNavigator() {
     return (
         <Stack.Navigator
-            initialRouteName="Stack"
+            initialRouteName="Details"
         >
-            <Stack.Screen name="Stack" component={DetailsScreen}
+            <Stack.Screen name="Details" component={DetailsScreen}
                 options={{
                     headerTitleAlign: 'center',
                     headerTitleStyle: {color: 'white'},
@@ -33,10 +37,5 @@ function StackNavigator() {
     )
 }
 
-function InitializeStack() {
-    return(
-            <StackNavigator />
-    )
-
-}
-export default InitializeStack
+//Eksport af den funktionelle komponent, således den kan importeres i andre komponenter
+export default StackNavigator

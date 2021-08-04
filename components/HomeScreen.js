@@ -1,7 +1,7 @@
 import {StyleSheet, Text, View} from "react-native";
 import * as React from "react";
 
-//Hoomscreen komponenten tager en prop med og printer midt på siden
+//HomeScreen komponenten tager en prop med og printer indholdet af denne i en <Text/>
 function HomeScreen({prop}) {
     return (
         <View style={styles.container}>
@@ -12,7 +12,7 @@ function HomeScreen({prop}) {
 
 export default HomeScreen
 
-//Styling komponenter til siden
+//Lokal styling til brug i HomeScreen
 const styles = StyleSheet.create({
     container: {
         borderColor: 'red',

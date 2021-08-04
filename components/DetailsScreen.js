@@ -1,13 +1,22 @@
 import {Button, StyleSheet, Text, View} from "react-native";
 import * as React from "react";
 
-//Metode til at navigere på baggrund af de argumenter, som der sendes med i metode
-//Vi kalder metoden navigation op navigation, som benytter den overførte rutereferencen til at navigere.
+/*
+* Metode til at navigere på baggrund af de argumenter, som der sendes med i metode
+* Metodens logik udnytter den prædefinerede metode, 'navigate', som navigere ind til det den komponent,
+* der hænger sammen med det overførte rutenavn
+ */
 const navController = (navigation, route) =>{
     navigation.navigate(route)
 }
 
-//Her foregår styling af Detials screen, der omfatter to button komponenter, der benytters til at aktivere vores navcontroller metode
+
+/*
+ * DetailsScreen tager 'navigation' med som argument. navigation er en automatisk prædefineret prop, der kan refereres til i alle screen komponenter.
+ *Se dokumentationen for mere info: https://reactnavigation.org/docs/navigation-prop/
+ *
+ *Derudover styles DetailsScreen, som indeholder omfatter to button komponenter, der benytters til at aktivere vores navController metode
+ */
 function DetailsScreen({navigation}) {
     return (
         <View style={styles.container}>
@@ -21,7 +30,7 @@ function DetailsScreen({navigation}) {
 export default DetailsScreen
 
 
-//Styling komponenter til siden.
+//Lokal styling til brug i DetailsScreen.
 const styles = StyleSheet.create({
     container: {
         paddingTop:100,
